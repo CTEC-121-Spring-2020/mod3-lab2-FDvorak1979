@@ -12,6 +12,14 @@ Output: return value and description
 """
 
 def main():
-    # code here
+    try:
+        print(4/0)
+    except ZeroDivisionError:
+        print("Line 16 error.  Cannot devide by zero!")
+
+    except:
+        print("\nunknown exception\n")
+        
+        exit()
 
 main()    
